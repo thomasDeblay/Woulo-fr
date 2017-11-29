@@ -10,10 +10,10 @@ export const Login = ({ startLogin }) => (
     <p> Prenez le contrôle de vos dépenses <br />
     Follow your expenses !</p>
       <button className="loginBtn loginBtn--google" onClick={startLogin} >
-      Login with Facebook
+      Login with Google
     </button>
     <button className="loginBtn loginBtn--facebook"  >
-    Login with Google
+    Login with Facebook
   </button>
     </div>
   </div>
