@@ -46,6 +46,7 @@
     "webpack": "^3.8.1"
   },
   "devDependencies": {
+    "chalk": "^2.3.0",
     "cross-env": "5.0.5",
     "dotenv": "4.0.0",
     "webpack-dev-server": "2.5.1"
