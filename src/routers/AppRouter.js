@@ -4,7 +4,6 @@ import createHistory from 'history/createBrowserHistory';
 import Add from '../components/Add';
 import EditExpense from '../components/EditExpense';
 import ExpenseDashbord from '../components/ExpenseDashbord';
-import Help from '../components/Help';
 import NotFound from '../components/NotFound';
 import Header from '../components/Header';
 import Login from '../components/Login';

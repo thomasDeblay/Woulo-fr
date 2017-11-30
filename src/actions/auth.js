@@ -20,3 +20,9 @@ export const startLogout = () => {
         return firebase.auth().signOut();
     }
 }
+
+// export const startLoginFacebook = () => {
+//   return () => {
+//     return firebase.auth().signInWithPopup(FacebookAuthProvider);
+//   }
+// }
