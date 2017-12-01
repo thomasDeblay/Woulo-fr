@@ -6,7 +6,7 @@ export const Login = ({ startLogin }) => (
   <div>
   <div className="login-form" >
     <div className="login-form__box" >
-    <h1 className="login-form__title" > Expensy </h1>
+    <h1 className="login-form__title" > Expensify </h1>
     <p> Prenez le contrôle de vos dépenses <br />
     Follow your expenses !</p>
       <button className="loginBtn loginBtn--google" onClick={startLogin} >
