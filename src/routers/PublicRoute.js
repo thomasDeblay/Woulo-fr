@@ -2,28 +2,22 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';
 
-
-
-export const PublicRoute = ({ 
-    isLog, 
-    component: Component,
-    ...rest
- }) => (
-
+export const PublicRoute = ({
+  isAuthenticated,
+  component: Component,
+  ...rest
+}) => (
     <Route {...rest} component={(props) => (
-        isLog ? (
-            <Redirect to="/home" />
-        ) : (
-            <Component {...props} />
+      isAuthenticated ? (
+        <Redirect to="/dashboard" />
+      ) : (
+          <Component {...props} />
         )
     )} />
-
-);
+  );
 
 const mapStateToProps = (state) => ({
-    isLog: !!state.auth.uid
+  isAuthenticated: !!state.auth.uid
 });
 
 export default connect(mapStateToProps)(PublicRoute);
-
-

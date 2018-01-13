@@ -1,0 +1,59 @@
+.box-layout {
+  align-items: center;
+  background: url('/images/bg.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.box-layout__box {
+  background: fade-out(white, .15);
+  border-radius: 3px;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 25rem;
+}
+
+.box-woulo__box {
+  background: fade-out(white, .15);
+  border-radius: 3px;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 45rem;
+  height: 60rem;
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+}
+
+.modalfacebook{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wouloform {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.textarea-box{
+  border: 0;
+    text-align: left;
+    text-transform: none;
+    padding: 9px;
+    min-height: 250px;
+    padding-left: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    background: rgba(255,255,255, 0.95);
+}
+

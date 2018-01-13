@@ -13,14 +13,12 @@ export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
     const {
-      description = '',
-      note = '',
-      amount = 0,
-      createdAt = 0
+      woulo = '',
+      like = 0
     } = expenseData;
-    const expense = {description, note, amount, createdAt};
+    const expense = {woulo, like};
 
-    database.ref(`users/${uid}/expenses`).push(expense).then((ref) => {
+    database.ref(`waitinglist/woulos`).push(expense).then((ref) => {
       dispatch(addExpense({
         id: ref.key,
         ...expense
@@ -28,6 +26,30 @@ export const startAddExpense = (expenseData = {}) => {
     })
   };
 };
+
+export const addRealExpense = (expense) => ({
+  type: 'ADD_REALEXPENSE',
+  expense
+});
+
+export const startAddRealExpense = (expenseData={}) => {
+  return (dispatch, getState) => {
+    const uid = getState().auth.uid;
+    const {
+      woulo= '',
+      like = 0
+    } = expenseData
+    const expense = {woulo, like};
+
+    database.ref(`open/woulo`).push(expense).then((ref) => {
+      dispatch(addRealExpense({
+        id: ref.key,
+        ...expense
+      }))
+    })
+    };
+  };
+
 
   // REMOVE_EXPENSE
   export const removeExpense = ({id} = {}) => ({
@@ -39,7 +61,7 @@ export const startAddExpense = (expenseData = {}) => {
     return (dispatch, getState) => {
 
       const uid = getState().auth.uid;
-      database.ref(`users/${uid}/expenses/${id}`).remove().then(() => {
+      database.ref(`waitinglist/woulos/${id}`).remove().then(() => {
         dispatch(removeExpense({id}))
       })
     };
@@ -56,8 +78,25 @@ export const startAddExpense = (expenseData = {}) => {
     return (dispatch, getState) => {
 
       const uid = getState().auth.uid;
-      database.ref(`users/${uid}/expenses/${id}`).update(updates).then(() => {
+      database.ref(`waitinglist/woulos/${id}`).update(updates).then(() => {
         dispatch(editExpense(id, updates))
+      })
+    };
+  };
+
+  export const addLike = (id, like) => ({
+    type: 'ADD_LIKE',
+    id, 
+    like
+  });
+
+  export const startAddLike = (id, like) => {
+    return (dispatch) => {
+      console.log(like);
+      like++;
+      console.log(like);
+      database.ref(`open/woulo/${id}`).update(like).then(() => {
+        dispatch(addLike(id))
       })
     };
   };
@@ -70,7 +109,7 @@ export const startAddExpense = (expenseData = {}) => {
   export const startSetExpenses = () => {
     return (dispatch, getState) => {
       const uid = getState().auth.uid;
-      return database.ref(`users/${uid}/expenses`).once('value').then((snapshot) => {
+      return database.ref(`open/woulo`).once('value').then((snapshot) => {
         const expenses = [];
 
         snapshot.forEach((childSnapshot) => {

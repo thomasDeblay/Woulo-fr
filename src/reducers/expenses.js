@@ -9,6 +9,11 @@
           ...state,
           action.expense
         ];
+        case 'ADD_REALEXPENSE':
+        return [
+          ...state,
+          action.expense
+        ];
       case 'REMOVE_EXPENSE':
         return state.filter(({ id }) => id !== action.id);
       case 'EDIT_EXPENSE':
@@ -24,6 +29,17 @@
         });
         case 'SET_EXPENSES':
           return action.expenses;
+        case 'ADD_LIKE':
+        return state.map((expense) => {
+          if (expense.id === action.id) {
+            const like = state.action.like;
+            return {
+              like: expense.like + 1
+            };
+          } else {
+            return expense;
+          };
+        });
       default:
         return state;
     }

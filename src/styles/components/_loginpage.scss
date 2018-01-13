@@ -1,0 +1,159 @@
+ .application {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url('/images/space.jpeg')no-repeat center center fixed;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.transfer {
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 40;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1), 0 10px 30px 0 rgba(0,0,0,0.2);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1),-webkit-transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    margin: -12.8125em 0 0;
+    height: 25.625em;
+    width: 22.5em;
+    left: 5em;
+    top: 50%;
+}
+
+
+ .transfer__window {
+    height: 100%;
+    text-align: center;
+}
+
+
+
+.terms__image {
+    display: block;
+    margin: 1.125em auto 0;
+}
+
+.transfer__footer {
+    position: relative;
+    padding: 0 1.25em;
+    height: 4.5em;
+}
+
+.illustration {
+    display: inline-block;
+    height: 10.625rem;
+    width: 10.625rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: none;
+    background-image: url('/images/rocket.png');
+    background-size: 100%;
+    opacity: 1;
+    -webkit-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out;
+}
+
+.transfer__contents {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 400;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    overflow: hidden;
+    height: 21.125em;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.logpage {
+    margin: 0;
+    font-family: sans-serif;
+    background: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: #409FFF;
+    color: #FFFFFF;
+}
+
+.transfer__button {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    cursor: pointer;
+    -webkit-transition: border-color 0.2s cubic-bezier(0.77, 0, 0.175, 1),background-color 0.2s cubic-bezier(0.77, 0, 0.175, 1),color 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: border-color 0.2s cubic-bezier(0.77, 0, 0.175, 1),background-color 0.2s cubic-bezier(0.77, 0, 0.175, 1),color 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.text-lp {
+    position: absolute;
+    z-index: 70;
+    margin: -5.8125em 0 0;
+    height: 25.625em;
+    width: 50.5em;
+    left: 24em;
+    top: 50%;
+}
+
+
+ .text-lp__window {
+    height: 100%;
+
+}
+
+.text-lp__title {
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+    color: rgb(223, 116, 116);
+    font-size: 50px;
+  }
+
+  .text-lp__subtitle {
+      color: #F5F5F5;
+      font-size: 20px
+  }
+
+  @media (max-width: 913px) {
+    .text-lp {
+        position: absolute;
+        z-index: 70;
+        margin: -28.8125em 0 0;
+        height: 100%;
+        width: 100% ;
+        left: -1em;
+        top: 50%;
+    }
+    
+    
+     .text-lp__window {
+        height: 100%;
+    
+    }
+    
+    .text-lp__title {
+        margin: 0 0 $m-size 0;
+        line-height: 1;
+        color: white;
+        font-size: 50px;
+      }
+    
+      .text-lp__subtitle {
+          color: transparent;
+          font-size: 20px
+      }
+  }
