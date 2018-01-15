@@ -31,6 +31,7 @@
 }
 
 
+
  .transfer__window {
     height: 100%;
     text-align: center;
@@ -136,7 +137,11 @@
         height: 100%;
         width: 100% ;
         left: -1em;
-        top: 50%;
+        top: 40%;
+    }
+
+    .transfer{
+        top: 70%;
     }
     
     
@@ -148,7 +153,6 @@
     .text-lp__title {
         margin: 0 0 $m-size 0;
         line-height: 1;
-        color: white;
         font-size: 50px;
       }
     

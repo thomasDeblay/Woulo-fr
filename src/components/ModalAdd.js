@@ -29,7 +29,10 @@ class ModalAdd extends React.Component {
     method: 'share',
     display: 'popup',
     mobile_iframe: true,
-    redirect_uri: history.push('/ajoutetonwoulo')
+    redirect_uri: history.push('/ajoutetonwoulo'),
+    action_properties: JSON.stringify({
+      cricket: 'https://woulo-fr.herokuapp.com',
+    })
   }, function(response){});
 };
 

@@ -8,7 +8,7 @@ const AfficheWoulo = (props) => (
                 <div className="login-form__box">
                     {props.selectedWoulo && <h5 className="login-form__title " > Woulooooo Ba mwen bagay la, woulooo Ba mwen bagay la, Woulooooo ba mwen bagay la , blablablablabla  </h5>}
                     {props.selectedWoulo && <p className="lewoulo" > {props.selectedWoulo.woulo}</p>}
-                    {props.selectedWoulo && <a className="likebutton" onClick={props.handleClick}  > <TiHeartOutline size="2x" /> {props.selectedWoulo.like} </a> }
+                   
                  </div>
             </div>
         </div>
@@ -16,3 +16,5 @@ const AfficheWoulo = (props) => (
 );
 
 export default AfficheWoulo;
+
+ // {props.selectedWoulo && <a className="likebutton" onClick={props.handleClick}  > <TiHeartOutline size="2x" /> {props.selectedWoulo.like} </a> }

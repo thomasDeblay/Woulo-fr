@@ -264,9 +264,7 @@ section.browser .nav-tabs a, section.browser .nav-tabs span.number {
   }
 
   section{
-    margin-bottom: 40px;
     margin-top: 0px;
-  padding-bottom: 150px;
   overflow: hidden;
  
   }
@@ -369,4 +367,34 @@ section.browser .nav-tabs a, section.browser .nav-tabs span.number {
 
   .BWW{
     text-decoration: none;
+  }
+
+  .fontb:before{
+    background: url('/images/05.png') no-repeat 0 0;
+    position: absolute;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    margin-top: -100px;
+  }
+
+  @media (max-width: 720px){
+    .fontb:before{
+      margin-top: -50px;
+    }
+  }
+
+  :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .background-c{
+    background: #F5F5F5;
+    padding-top: 50px;
+    z-index: 1;
+    position: relative;
+    padding: 0 0 100px;
+    box-sizing: border-box;
   }

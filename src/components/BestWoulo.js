@@ -7,7 +7,9 @@ export default class BestWoulos extends React.Component {
 
   render(){
     return (
-      <section id="browser" className="browser">
+    <section id="browser " className="browser fontb">
+    
+    <div className="background-c" >
     <div className="container">
       <div className="row d-flex justify-content-center"> 
         <div className="col-lg-8 text-center">
@@ -42,6 +44,7 @@ export default class BestWoulos extends React.Component {
           <div className="col-md-4"><a id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" className="nav-item nav-link BWW"> <span className="number">3</span><span className="BWW" >Woulo numéro 3 de la semaine </span></a></div>
         </div>
       </div>
+    </div>
     </div>
   </section>
     );
