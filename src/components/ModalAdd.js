@@ -27,12 +27,10 @@ class ModalAdd extends React.Component {
   facebookshare = () => {
     FB.ui({
     method: 'share',
+    href: 'https://expenses-track-app.herokuapp.com',
     display: 'popup',
     mobile_iframe: true,
     redirect_uri: history.push('/ajoutetonwoulo'),
-    action_properties: JSON.stringify({
-      cricket: 'https://woulo-fr.herokuapp.com',
-    })
   }, function(response){});
 };
 
