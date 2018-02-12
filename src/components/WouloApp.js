@@ -66,7 +66,7 @@ export class WouloApp extends React.Component {
                         handleSelecWoulo={this.handleSelecWoulo}
                         />
                             <h1 className="jumbotron-heading-WA display-4-WA h1-WA" > Génère les meilleurs woulos</h1>
-                            <p className="lead-WA p-WA" > A chaque clique, tu feras lever le maison ! </p>
+                            <p className="lead-WA p-WA" > A chaque clic, tu feras lever le maison ! </p>
                             <Action
                             hasWoulos={this.props.Woulos.length > 0}
                             handlePick={this.handlePick}

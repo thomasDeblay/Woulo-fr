@@ -14,23 +14,25 @@ export default class BestWoulos extends React.Component {
       <div className="row d-flex justify-content-center"> 
         <div className="col-lg-8 text-center">
           <h2 className="jumbotron-heading-WA display-4-WA but ">Nos Best Woulos</h2>
+          <br />
+          <p> Clique dessus pour les découvrir ! </p>
           <div className="browser-mockup">
             <div id="nav-tabContent" className="tab-content">
               <div id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab" className="tab-pane fade show active">
               <FacebookProvider appId="153457595283592">
-                <EmbeddedPost href="https://www.facebook.com/goalcast/posts/1626644120746105" width="500" />
+                <EmbeddedPost href="https://www.facebook.com/WebAppWoulo/posts/1901309396865931www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1901309396865931%26id%3D1900082676988603" width="500" data-show-text="true" />
               </FacebookProvider>
               </div>
 
               <div id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab" className="tab-pane fade">
               <FacebookProvider appId="153457595283592">
-                <EmbeddedPost href="https://www.facebook.com/goalcast/posts/1626645847412599" width="500" />
+                <EmbeddedPost href="https://www.facebook.com/WebAppWoulo/posts/1901308680199336" width="500" />
               </FacebookProvider>
               </div>
 
               <div id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab" className="tab-pane fade">
               <FacebookProvider appId="153457595283592">
-                <EmbeddedPost href="https://www.facebook.com/20531316728/posts/10154009990506729/" width="500" />
+                <EmbeddedPost href="https://www.facebook.com/WebAppWoulo/posts/1901307640199440" width="500" />
               </FacebookProvider>
               </div>
             </div>

@@ -19,8 +19,8 @@ export const LoginPage = ({ startLogin }) => (
       <div className="text-lp">
       <div className="text-lp__window" >
         <div className="transfer__contents" >
-          <h1 className="text-lp__title">Découvre les meilleurs woulos</h1>
-          <p className="text-lp__subtitle" > Et enflame le public avec le meilleur lyrics </p>
+          <h1 className="text-lp__title"><strong>Découvre les meilleurs woulos</strong></h1>
+          <p className="text-lp__subtitle" > Et enflame le public avec les meilleurs lyrics </p>
         </div>
       </div>
       </div>
